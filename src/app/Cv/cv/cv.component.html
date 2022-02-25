@@ -3,6 +3,6 @@
     <app-list-cv (selectedCv)="selectCv($event)" [cvs]="cvs"></app-list-cv>
   </div>
   <div class="col-md-6">
-    <app-detail-cv [cv]="selectedCv"></app-detail-cv>
+    <app-detail-cv *ngIf="selectedCv"[cv]="selectedCv"></app-detail-cv>
   </div>
 </div>
